@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN"
+"http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport name="chathuranga-sample-report" language="groovy" pageWidth="1190" pageHeight="1314" columnWidth="1150" leftMargin="0" rightMargin="0" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="date" class="java.lang.String"/>
+	<field name="vehiclenumber" class="java.lang.String"/>
+	<field name="drivername" class="java.lang.String"/>
+	<field name="organization" class="java.lang.String"/>
+	<field name="towhere" class="java.lang.String"/>
+	<field name="inkm" class="java.lang.Double"/>
+	<field name="outkm" class="java.lang.Double"/>
+	<field name="intime" class="java.lang.String"/>
+	<field name="outtime" class="java.lang.String"/>
+	<field name="consumedfuel" class="java.lang.Double"/>
+	<field name="repair" class="java.lang.String"/>
+	<field name="amount" class="java.lang.Double"/>
+	<title>
+		<band height="40">
+		<staticText>
+				<reportElement x="5" y="5" width="1100" height="30"/>
+				<textElement textAlignment="Center">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Daily Vehicle Report]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="20" />
+	</pageHeader>
+	<columnHeader>
+		<band height="65">
+		
+			<staticText>
+			
+				<reportElement x="15" y="25" width="85" height="20"/>
+				
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="115" y="25" width="85" height="20"/>
+				
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VehicleNumber]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="230" y="25" width="85" height="20"/>
+				
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DriverName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="340" y="25" width="85" height="20"/>
+				
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Organization]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="425" y="25" width="85" height="20"/>
+				
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[To Where]]></text>
+			</staticText>
+			
+			<staticText>
+				<reportElement x="595" y="25" width="85" height="20"/>
+				
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[In KM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="680" y="25" width="85" height="20"/>
+				
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Out KM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="765" y="25" width="85" height="20"/>
+				
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[In Time]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="850" y="25" width="85" height="20"/>
+				
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Out Time]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="935" y="25" width="85" height="20"/>
+				
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fuel(Ltr)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1020" y="25" width="85" height="20"/>
+				
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ Repair]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1105" y="25" width="85" height="20"/>
+				
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Amount]]></text>
+			</staticText>
+			
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="45" >
+		
+			<textField isStretchWithOverflow="true">
+				<reportElement x="15" y="0" width="85" height="35"/>
+				
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+			
+			<textField isStretchWithOverflow="true">
+				<reportElement x="115" y="0" width="85" height="35"/>
+				
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{vehiclenumber}]]></textFieldExpression>
+			</textField>
+				
+			<textField isStretchWithOverflow="true">
+				<reportElement x="230" y="0" width="85" height="35"/>
+				
+				<textElement textAlignment="Center">
+				<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{drivername}]]></textFieldExpression>
+			</textField>
+		
+			<textField isStretchWithOverflow="true">
+				<reportElement x="340" y="0" width="85" height="35"/>
+				
+				
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+					
+				<textFieldExpression><![CDATA[$F{organization}]]></textFieldExpression>
+			</textField>
+			
+			
+			<textField isStretchWithOverflow="true">
+				<reportElement x="425" y="0" width="85" height="35"/>
+				
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{towhere}]]></textFieldExpression>
+			</textField>
+			
+			<textField isStretchWithOverflow="true">
+				<reportElement x="595" y="0" width="85" height="35"/>
+				
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{inkm}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="680" y="0" width="85" height="35"/>
+				
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{outkm}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="765" y="0" width="85" height="35"/>
+				
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{intime}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="850" y="0" width="85" height="35"/>
+				
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{outtime}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="935" y="0" width="85" height="35"/>
+				
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{consumedfuel}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="1020" y="0" width="85" height="35"/>
+				
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{repair}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="1105" y="0" width="85" height="35"/>
+				
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{amount}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" />
+	</columnFooter>
+	<pageFooter>
+	<band height="20"/>
+	
+	</pageFooter>
+	<summary>
+		<band height="42" />
+	</summary>
+</jasperReport>
+
+
+
+

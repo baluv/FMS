@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+		http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/util 
+		http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+    <!--here all the url value should contains the valid path for the jrxml file-->
+<bean id="pdfReport"
+		class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
+		p:url="/reports/dailyvhicle.jrxml"
+		p:reportDataKey="datasource"/>
+		
+	<bean id="organizationCR"
+		class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
+		p:url="/reports/organizationlist.jrxml"
+		p:reportDataKey="datasource"/>
+	
+	<bean id="openorganizationCR"
+		class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
+		p:url="/reports/openorganizationcom.jrxml"
+		p:reportDataKey="datasource"/>
+		
+	<bean id="categoryCR"
+		class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
+		p:url="/reports/catlist.jrxml"
+		p:reportDataKey="datasource"/>
+		
+	<bean id="opencategoryCR"
+		class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
+		p:url="/reports/opencategory.jrxml"
+		p:reportDataKey="datasource"/>
+		
+	<bean id="roomHistoryCR"
+		class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
+		p:url="/reports/roomhistoryreport.jrxml"
+		p:reportDataKey="datasource"/>
+		
+	<bean id="vocuherreport"
+		class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
+		p:url="/reports/voucherlist.jrxml"
+		p:reportDataKey="datasource"/>
+	
+	<bean id="complaintvoucher"
+		class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
+		p:url="/reports/voucherForm.jrxml"
+		p:reportDataKey="datasource"/>
+		
+		
+		<bean id="dailycomplaintreport"
+		class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
+		p:url="/reports/organizationlist.jrxml"
+		p:reportDataKey="datasource"/>
+		
+		<bean id="inwardreturnble1"
+		class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
+		p:url="/reports/inwardreturnble1.jrxml"
+		p:reportDataKey="datasource"/>
+		
+		<bean id="inwardnonreturnble1"
+		class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
+		p:url="/reports/inwardnonreturnable1.jrxml"
+		p:reportDataKey="datasource"/>
+		
+		
+		<bean id="outwardreturnable"
+		class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
+		p:url="/reports/outwardreturnable1.jrxml"
+		p:reportDataKey="datasource"/>
+		
+		<bean id="outwardnonreturnable"
+		class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
+		p:url="/reports/outwardreturnable11.jrxml"
+		p:reportDataKey="datasource"/>
+		
+		 <bean id="xlsReport"
+          class="org.springframework.web.servlet.view.jasperreports.JasperReportsXlsView"
+          p:url="/reports/dailyvhicle.jrxml"
+          p:reportDataKey="datasource" />
+		
+
+</beans>

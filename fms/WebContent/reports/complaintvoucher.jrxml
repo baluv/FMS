@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN"
+"http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport name="chathuranga-sample-report" language="groovy" pageWidth="1190" pageHeight="1314" columnWidth="1150" leftMargin="0" rightMargin="0" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="complaintId" class="java.lang.Integer"/>
+	<field name="material" class="java.lang.String"/>
+	<field name="voucherDate" class="java.lang.String"/>
+	<field name="paidPerson" class="java.lang.String"/>
+	<field name="receivedPerson" class="java.lang.String"/>
+	<field name="amount" class="java.lang.Double"/>
+	<field name="phoneNumber" class="java.lang.Integer"/>
+	<field name="status" class="java.lang.String"/>
+	
+	<title>
+		<band height="40">
+		<staticText>
+				<reportElement x="5" y="5" width="1100" height="30"/>
+				<textElement textAlignment="Center">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Voucher Details]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="20" />
+	</pageHeader>
+	<columnHeader>
+		<band height="65">
+		
+			<staticText>
+			
+				<reportElement x="15" y="25" width="85" height="20"/>
+				
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Complaint Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="115" y="25" width="85" height="20"/>
+				
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Material]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="230" y="25" width="85" height="20"/>
+				
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Voucher Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="340" y="25" width="85" height="20"/>
+				
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PaidPerson]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="425" y="25" width="85" height="20"/>
+				
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ReceivedPerson]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="520" y="25" width="85" height="20"/>
+				
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="595" y="25" width="85" height="20"/>
+				
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Phone Number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="680" y="25" width="85" height="20"/>
+				
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Status]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="45" >
+		
+			<textField >
+				<reportElement x="15" y="0" width="85" height="35"/>
+				
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{complaintId}]]></textFieldExpression>
+			</textField>
+			
+			<textField>
+				<reportElement x="115" y="0" width="85" height="35"/>
+				
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{material}]]></textFieldExpression>
+			</textField>
+				
+			<textField >
+				<reportElement x="230" y="0" width="85" height="35"/>
+				
+				<textElement textAlignment="Center">
+				<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{voucherDate}]]></textFieldExpression>
+			</textField>
+		
+			<textField >
+				<reportElement x="340" y="0" width="85" height="35"/>
+				
+				
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+					
+				<textFieldExpression><![CDATA[$F{paidPerson}]]></textFieldExpression>
+			</textField>
+			
+			
+			<textField >
+				<reportElement x="425" y="0" width="85" height="35"/>
+				
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{receivedPerson}]]></textFieldExpression>
+			</textField>
+			<textField >
+				<reportElement x="520" y="0" width="85" height="35"/>
+				
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{amount}]]></textFieldExpression>
+			</textField>
+			<textField >
+				<reportElement x="595" y="0" width="85" height="35"/>
+				
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{phoneNumber}]]></textFieldExpression>
+			</textField>
+			<textField >
+				<reportElement x="680" y="0" width="85" height="35"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" />
+	</columnFooter>
+	<pageFooter>
+	<band height="20"/>
+	
+	</pageFooter>
+	<summary>
+		<band height="42" />
+	</summary>
+</jasperReport>
+
+
+
+

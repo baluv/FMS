@@ -1,0 +1,61 @@
+input {
+	margin: 0px auto 10px 5px;
+	background: #fff;
+	border: none;
+	height: 29px;
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #535353;
+	padding-left: 10px;
+	float: left;
+	-moz-box-shadow: inset 0 0 5px #000000;
+	-webkit-box-shadow: inset 0 0 5px #000000;
+	box-shadow: inset 0 0 5px #000000;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+textarea{
+	margin: 0px auto 10px 5px;
+	background: #fff;
+	border: none;
+	height: 60px;
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #535353;
+	padding-left: 10px;
+	float: left;
+	-moz-box-shadow: inset 0 0 5px #000000;
+	-webkit-box-shadow: inset 0 0 5px #000000;
+	box-shadow: inset 0 0 5px #000000;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+select {
+	margin: 0px auto 10px 5px;
+	z-index: 10;
+	margin-top: 4px;
+	font: 11px Arial, Helvetica, sans-serif;
+	border: 1px solid #c8c8c8;
+	padding: 0 0 0 5px;
+	width: 140px;
+	text-align: left;
+	background: #fff; left top no-repeat;
+	cursor: pointer;
+	color: #717171;
+	width: 138px;
+	height: 29px;
+	clear: both;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.readOnly {
+	background: yellow;
+}
